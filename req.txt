@@ -1,0 +1,4 @@
+1-Backend
+    npm init
+    npm i express prisma @prisma/client cors 
+    npm i ts-node typescript nodemon @types/cors @types/express @types/node --save-dev
