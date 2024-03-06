@@ -8,7 +8,7 @@ export const searchRecipes = async (searchTerm: string, page: number) => {
   const url = new URL('https://api.spoonacular.com/recipes/complexSearch');
 
   const queryParams = {
-    apiKey, // same name so we gonna use shorthand
+    apiKey: apiKey, // same name so we gonna use shorthand
     query: searchTerm, //getting query from searchterm
     number: '10', //The number of expected results
     offset: (page * 10).toString(), //The number of results to skip
@@ -18,6 +18,7 @@ export const searchRecipes = async (searchTerm: string, page: number) => {
   try {
     const searchResponse = await fetch(url);
     const resultsJson = await searchResponse.json();
+    return resultsJson;
   } catch (error) {
     console.log(error);
   }

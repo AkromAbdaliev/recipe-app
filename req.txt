@@ -2,3 +2,16 @@
     npm init
     npm i express prisma @prisma/client cors 
     npm i ts-node typescript nodemon @types/cors @types/express @types/node --save-dev
+    npx prisma init
+    npm i dotenv
+
+2-Frontend
+    npm create vite@latest
+
+√ Select a framework: » React
+√ Select a variant: » TypeScript + SWC
+
+  cd frontend
+  npm install
+  npm run dev
+  
