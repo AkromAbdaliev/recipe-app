@@ -4,6 +4,7 @@
     npm i ts-node typescript nodemon @types/cors @types/express @types/node --save-dev
     npx prisma init
     npm i dotenv
+    npx prisma db push
 
 2-Frontend
     npm create vite@latest
@@ -14,4 +15,5 @@
   cd frontend
   npm install
   npm run dev
+  npm i react-icons
   
